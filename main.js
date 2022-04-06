@@ -8,7 +8,7 @@ function setup(){
     
     canvas= createCanvas(380,380);
     canvas.center();
-    video = createCapture(VIDEO);
+    video = createCapture();
     video.hide();
     
     objectDetection= ml5.objectDetector('cocossd',modelLoaded);
