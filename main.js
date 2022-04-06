@@ -10,7 +10,7 @@ function setup(){
     canvas.center();
     video = createCapture(VIDEO);
     video.hide();
-    video.size(380,380);
+    
     objectDetection= ml5.objectDetector('cocossd',modelLoaded);
     document.getElementById("status").innerHTML= "Status: Detecting Objects";
 
